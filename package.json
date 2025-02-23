@@ -1,0 +1,22 @@
+{
+  "name": "f8-prj-08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss:assets/css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiIamHiep/GroceryMart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HiIamHiep/GroceryMart/issues"
+  },
+  "homepage": "https://github.com/HiIamHiep/GroceryMart#readme"
+}
