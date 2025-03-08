@@ -7,6 +7,13 @@
   width: min(1240px, 100%);
   padding-top: 54px;
 
+  @include abstracts.breakpoint(lg) {
+    position: initial;
+    display: block;
+
+    padding-top: 0;
+  }
+
   &__inner {
     --inner-padding: 30px;
     position: relative;
@@ -23,6 +30,18 @@
       left: var(--arrow-left-pos);
       filter: var(--dropdown-arrow-color);
     }
+
+    @include abstracts.breakpoint(lg) {
+      padding: 0 40px;
+
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+
+      &::before {
+        content: none;
+      }
+    }
   }
 }
 
@@ -38,6 +57,12 @@
     border-right: 1px solid var(--top-menu-border-color);
     height: var(--max-inner-height);
     overflow-y: auto;
+
+    @include abstracts.breakpoint(lg) {
+      height: auto;
+      width: 100%;
+      border-right: none;
+    }
   }
 }
 
@@ -49,6 +74,10 @@
     margin-top: 22px;
   }
 
+  @include abstracts.breakpoint(lg) {
+    margin-top: 10px;
+  }
+
   &__icon {
     position: relative;
     flex-shrink: 0;
@@ -58,6 +87,10 @@
 
     @include abstracts.breakpoint(xl) {
       display: none;
+    }
+
+    @include abstracts.breakpoint(lg) {
+      display: block;
     }
   }
 
@@ -86,6 +119,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
+
+    @include abstracts.breakpoint(lg) {
+      margin-bottom: 26px;
+    }
   }
 
   &__item {
@@ -102,6 +139,10 @@
 
   &__list {
     margin-top: 19px;
+
+    @include abstracts.breakpoint(lg) {
+      margin-top: 0;
+    }
   }
 
   &__link {
@@ -115,12 +156,18 @@
 .sub-menu {
   position: absolute;
 
-  display: none;
   grid-template-columns: repeat(3, 1fr);
 
   inset: 0 0 0 var(--main-column-width);
   padding-left: var(--inner-padding);
   overflow-y: auto;
+
+  @include abstracts.breakpoint(lg) {
+    position: initial;
+    grid-template-columns: 1fr;
+
+    padding-left: 0;
+  }
 
   &--not-main {
     position: initial;
