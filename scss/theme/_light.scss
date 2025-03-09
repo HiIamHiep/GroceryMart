@@ -17,7 +17,11 @@ html {
   --menu-column-icon-color: brightness(0) saturate(100%) invert(4%) sepia(45%)
     saturate(4199%) hue-rotate(242deg) brightness(95%) contrast(89%);
 
-  @include abstracts.breakpoint(lg) {
+  // Sidebar
+  --sidebar-bg: #fff;
+  --sidebar-shadow: rgba(200, 200, 200, 0.4);
+
+  @include abstracts.screen(lg) {
     --header--bg-color: #fff;
     --header--shadow-color: rgba(237, 237, 246, 0.2);
   }

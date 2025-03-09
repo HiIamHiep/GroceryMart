@@ -12,7 +12,6 @@ $display-values: block, flex, grid, none;
 @mixin make-display($breakpoint: null) {
   $infix: if($breakpoint, "-#{$breakpoint}", "");
   @each $display in $display-values {
-    @debug ".d#{$infix}-#{$display}";
     .d#{$infix}-#{$display} {
       display: $display !important;
     }
