@@ -34,6 +34,7 @@ a,
 img,
 button,
 input,
+label,
 textarea,
 select {
   padding: 0;
@@ -42,6 +43,10 @@ select {
   outline: none;
   border: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  background: transparent;
 }
 
 .icon {
