@@ -13,6 +13,11 @@ html {
   --top-act-group-shadow: rgba(237, 237, 246, 0.2);
   --top-act-group-separate: #ededf6;
 
+  // Header
+  --header-act-dropdown-bg: #fff;
+  --header-act-dropdown-shadow: rgba(200, 200, 200, 0.4);
+  --header-act-dropdown-border-color: #d2d1d6;
+
   // Dropdown
   --dropdown-bg-color: #fff;
   --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
@@ -47,14 +52,41 @@ html {
 
   // Form
   --form-placeholder-color: #d2d1d6;
+  --form-select-dialog-shadow: rgba($color: #000000, $alpha: 0.15);
+  --form-select-dialog-bg: #fff;
+  --form-option-hover-bg: #ebebeb;
 
   // Product detail
   --product-detail-bg: #fff;
   --product-detail-info-bg: #f6f6f6;
+  --product-detail-info-content-bg: #fff;
+  --product-detail-tag-bg: #ededf6;
 
   // Breadcrumb
   --breadcrumbs-bg: #f6f6f6;
   --breadcrmbs-shadow: rgba(237, 237, 246, 0.2);
+
+  // Search bar
+  --search-bar-bg: #fff;
+
+  // Review card
+  --review-card-bg: #fafafd;
+
+  // Text content
+  --text-content-hr-bg: #ebebeb;
+
+  // Checkout
+  --checkout-border-color: #d2d1d6;
+  --checkout-breadcrumb-bg: #fff;
+  --checkout-card-info-bg: #fff;
+  --chekout-card-info-shadow: rgba(237, 237, 246, 0.2);
+  --checout-gift-shadow: rgba(237, 237, 246, 0.2);
+
+  // Dialog
+  --dialog-bg: #fff;
+  --dialog-shadow: rgba(237, 237, 246, 0.2);
+
+  // Forms
 
   @include abstracts.screen(md) {
     --auth-intro-bg: #fff;
@@ -65,7 +97,6 @@ html {
     --header--shadow-color: rgba(237, 237, 246, 0.2);
   }
 
-  // category item
   @include abstracts.screen(md) {
     --cate-item-bg: #fff;
   }
@@ -77,5 +108,9 @@ html {
 
   @include abstracts.screen(md) {
     --breadcrumbs-bg: #fff;
+  }
+
+  @include abstracts.screen(md) {
+    --review-card-bg: #fff;
   }
 }
