@@ -4,7 +4,7 @@
   display: flex;
   min-height: 100vh;
 
-  @support (-webkit-touch-callout: none) {
+  @supports (-webkit-touch-callout: none) {
     min-height: -webkit-fill-available;
   }
 
